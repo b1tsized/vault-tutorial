@@ -1,4 +1,4 @@
-#Getting started and installing Vault
+# Getting started and installing Vault
 
 **Pre-reqs**
 
@@ -9,7 +9,7 @@
   - ***unzip***
   - ***jq***
 
-##Installing Consul Backend
+## Installing Consul Backend
 
   1. Download Consul
       `wget https://releases.hashicorp.com/consul/1.9.1/consul_1.9.1_linux_amd64.zip`
@@ -38,7 +38,7 @@
   15. Enable Consul as a service upon reboot
         `sudo systemctl enable consul`
 
-##Creating a cert for the server
+## Creating a cert for the server
 
   1. Installing Certbot
       `sudo apt install certbot`
@@ -49,7 +49,7 @@
                `/etc/letsencrypt/live/{{subdomain.example.com}}/privkey.pem`
 
 
-##Install Hashicorp Vault
+## Install Hashicorp Vault
 
   1. Download Hashicorp Vault
       `wget https://releases.hashicorp.com/vault/1.6.1/vault_1.6.1_linux_amd64.zip`
