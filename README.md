@@ -6,6 +6,7 @@ Here you can find all of the necessary templates and step by step instructions i
 
 Feel free to check out the following sections. They'll be updated as I add more content to my video tutorials.
 
-##Tutorials:
+## Tutorials
 
 1. [Setting up Consul and Hashicorp Vault](getting-started/GETTING-STARTED.MD)
+    - [Sys File Templates](getting-started/sys_file_templates)  
