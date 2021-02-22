@@ -8,7 +8,7 @@ Feel free to check out the following sections. They'll be updated as I add more 
 
 ## Tutorials
 
-1. [Setting up Consul and Hashicorp Vault](getting-started/GETTING-STARTED.MD)
+1. [Setting up Consul and Hashicorp Vault](getting-started/README.MD)
     - [Sys File Templates](getting-started/sys_file_templates)
         + [Consul Service File](getting-started/sys_file_templates/consul.service)
         + [Consul UI JSON](getting-started/sys_file_templates/ui.json)
