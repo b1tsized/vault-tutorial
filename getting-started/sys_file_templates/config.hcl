@@ -1,5 +1,5 @@
 storage "consul" {
-  address = "0.0.0.0:8300"
+  address = "0.0.0.0:8500"
   path = "vault/"
 }
 listener "tcp" {
