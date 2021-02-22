@@ -12,5 +12,5 @@ Feel free to check out the following sections. They'll be updated as I add more 
     - [Sys File Templates](getting-started/sys_file_templates)
         + [Consul Service File](getting-started/sys_file_templates/consul.service)
         + [Consul UI JSON](getting-started/sys_file_templates/ui.json)
-        + [Vault Config File](getting-started/sys_file_templates/vault.hcl)
+        + [Vault Config File](getting-started/sys_file_templates/config.hcl)
         + [Vault Service File](getting-started/sys_file_templates/vault.service)
