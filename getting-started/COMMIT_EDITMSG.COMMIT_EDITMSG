@@ -1,0 +1,15 @@
+Uploading "Getting Started" tutorial
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#   (use "git restore --staged <file>..." to unstage)
+#	modified:   README.md
+#	new file:   getting-started/GETTING-STARTED.MD
+#	new file:   getting-started/sys_file_templates/config.hcl
+#	new file:   getting-started/sys_file_templates/consul.service
+#	new file:   getting-started/sys_file_templates/ui.json
+#	new file:   getting-started/sys_file_templates/vault.service
+#
