@@ -14,3 +14,5 @@ Feel free to check out the following sections. They'll be updated as I add more 
         + [Consul UI JSON](getting-started/sys_file_templates/ui.json)
         + [Vault Config File](getting-started/sys_file_templates/config.hcl)
         + [Vault Service File](getting-started/sys_file_templates/vault.service)
+2. [Creating and Accessing Secrets](creating-and-accessing-secrets)
+    - [Payload Template](creating-and-accessing-secrets/template/payload.json)
