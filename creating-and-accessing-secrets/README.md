@@ -101,7 +101,7 @@
 
 	**Example:** `curl -H 'Authorization:Bearer {token}' -X GET https://vault.bitsized.tech:8200/v1/bstv1/secret | jq`
 
-5. Let's create new data with [payload.json](creating-and-accessing-secrets/template/payload.json)
+5. Let's create new data with [payload.json](template/payload.json)
 
 	`sudo nano payload.json`
 
