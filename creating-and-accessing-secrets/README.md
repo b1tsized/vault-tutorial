@@ -51,7 +51,9 @@
 
 ## Enabling secrets via the UI
 
-1. Login to your vault server in this example mine is https://vault.bitsized.tech:8200/ui
+1. Login to your vault server 
+
+	**Example:** _https://vault.bitsized.tech:8200/ui_
 
 2. Login using your token
 
@@ -67,7 +69,7 @@
 
 8. Add a path and enter a a secret and value
 
-	**In this tutorial I'm going to use path secret wtih whatisit and thisisav2secret for my kv pair**
+	_In this tutorial I'm going to use path secret wtih whatisit and thisisav2secret for my kv pair_
 
 9. Let's go back to 'Secrets'
 
@@ -81,7 +83,7 @@
 
 14. Add a path and enter a a secret and value
 
-	**In this tutorial I'm going to use path secret wtih whatisit and thisisav1secret for my kv pair**
+	_In this tutorial I'm going to use path secret wtih whatisit and thisisav1secret for my kv pair_
 
 ## Accessing secrets from a remote machine
 
