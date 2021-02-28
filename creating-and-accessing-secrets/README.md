@@ -47,7 +47,7 @@
 
 13. We'll disable out kv secrets
 
-	`vault secret disable kv/`
+	`vault secrets disable kv/`
 
 ## Enabling secrets via the UI
 
