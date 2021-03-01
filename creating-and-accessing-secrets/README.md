@@ -69,7 +69,7 @@
 
 8. Add a path and enter a a secret and value
 
-	_In this tutorial I'm going to use path secret wtih whatisit and thisisav2secret for my kv pair_
+	_In this tutorial I'm going to use path secret with whatisit and thisisav2secret for my kv pair_
 
 9. Let's go back to 'Secrets'
 
@@ -83,7 +83,7 @@
 
 14. Add a path and enter a a secret and value
 
-	_In this tutorial I'm going to use path secret wtih whatisit and thisisav1secret for my kv pair_
+	_In this tutorial I'm going to use path secret with whatisit and thisisav1secret for my kv pair_
 
 ## Accessing secrets from a remote machine
 
