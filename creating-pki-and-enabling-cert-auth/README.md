@@ -56,7 +56,7 @@
 
 	_In this tutorial I'm going to use path secret with canweaccess and nowecant for my kv pair_
 
-## Enabling pki, generating certs, and signing them through the CLI
+## Enabling PKI, Generating Certs, And Signing Them Through The CLI
 
 1. Enable pki secrets engine
 
