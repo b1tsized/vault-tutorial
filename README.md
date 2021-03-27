@@ -17,7 +17,7 @@ Feel free to check out the following sections. They'll be updated as I add more 
         + [Vault Service File](getting-started/sys_file_templates/vault.service)
 
 2. [Creating And Accessing Secrets](creating-and-accessing-secrets)
-    - [Youtube Tutorial](https://www.youtube.com/watch?v=7JQVdvmLmio)
+    - [Youtube Tutorial](https://www.youtube.com/watch?v=LEpk376fc-U)
     - [Payload Template](creating-and-accessing-secrets/template/payload.json)
 
 3. [Creating PKI And Enabling Cert Auth](creating-pki-and-enabling-cert-auth/README.md)
