@@ -74,7 +74,7 @@
 
 	`issuing_certificates="http://{{vault_address}}:8200/v1/pki/ca" \`
 
-	`crl_distribution_points=\{{vault_address}}:8200/v1/pki/crl`
+	`crl_distribution_points="https://{{vault_address}}:8200/v1/pki/crl"`
 
 4. Enable pki_int path in pki
 
@@ -86,7 +86,7 @@
 
 6. Generate an intermediate cert and save to CSR
 
-	`vault write -format=json oki_int/intermediate/generate/internal \`
+	`vault write -format=json pki_int/intermediate/generate/internal \`
 
 	`common_name="{{vault_domain}} Intermediate Authority" \`
 
@@ -130,7 +130,7 @@
 
 1. Create a role for the cert auth and a place to store them
 
-	`vault write pki_int/roles/vault-cert allow-any-name=true max_ttl="720h" generate_lease=true`
+	`vault write pki_int/roles/vault-cert allow_any_name=true max_ttl="720h" generate_lease=true`
 
 	_Note: You'll need to update the path of what secrets you want this certificate to be able to access_
 

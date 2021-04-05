@@ -2,43 +2,67 @@
 
 path "pki_int/issue/*" {
 
-  capabilities = ["create", "update"]
+    capabilities = ["create", "update"]
 
 }
 
 path "pki_int/certs" {
 
-  capabilities = ["list"]
+    capabilities = ["list"]
 
 }
 
 path "pki_int/revoke" {
 
-  capabilities = ["create", "update"]
+    capabilities = ["create", "update"]
 
 }
 
 path "pki_int/tidy" {
 
-  capabilities = ["create", "update"]
+capabilities = ["create", "update"]
 
 }
-
+    
 path "pki/cert/ca" {
 
-  capabilities = ["read"]
+capabilities = ["read"]
 
 }
 
 path "auth/token/renew" {
 
-  capabilities = ["update"]
+    capabilities = ["update"]
+
+}
+    
+path "auth/token/renew-self" {
+    
+    capabilities = ["update"]
 
 }
 
-path "auth/token/renew-self" {
+# Roles to create, update secrets 
 
-  capabilities = ["update"]
+path "/sys/mounts" {
+    capabilities = ["read", "update", "list"]
+    }
+
+path "/sys/mounts/*" {
+    
+    capabilities = ["update", "create"]
+
+}
+
+path "sys/policies/acl" {
+
+    capabilities = ["read"]
+
+}
+    
+path "secret/*" {
+
+    capabilities = ["read", "create", "update", "delete"]
 
 }
 
