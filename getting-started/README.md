@@ -9,6 +9,8 @@
   - ***unzip***
   - ***jq***
 
+- [Youtube Tutorial Pt. 1](https://www.youtube.com/watch?v=b_2lo30g0RU)
+
 ## Installing Consul Backend
 
   1. Download Consul

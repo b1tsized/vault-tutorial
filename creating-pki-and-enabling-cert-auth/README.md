@@ -1,5 +1,7 @@
 # Creating PKI And Enabling Cert Authentication
 
+- [Youtube Tutorial Pt. 3](https://youtu.be/_Nqx0guy5RY)
+
 ## Creating New Secrets
 
 1. Login to your vault server 

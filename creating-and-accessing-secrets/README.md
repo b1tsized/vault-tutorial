@@ -1,5 +1,6 @@
 # Enabling your first secret and accessing it remotely
 
+- [Youtube Tutorial Pt. 2](https://www.youtube.com/watch?v=LEpk376fc-U)
 
 ## Enabling your secret store using CLI
 
