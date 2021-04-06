@@ -1,4 +1,4 @@
-# Enabling your first secret and accessing it remotely
+# Enabling Your First Secret & Accessing It Remotely
 
 - [Youtube Tutorial Pt. 2](https://www.youtube.com/watch?v=LEpk376fc-U)
 

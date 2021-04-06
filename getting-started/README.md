@@ -1,4 +1,4 @@
-# Getting started and installing Vault
+# Getting Started & Installing Vault
 
 **Pre-reqs**
 
