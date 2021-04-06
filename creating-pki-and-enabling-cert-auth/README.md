@@ -1,4 +1,4 @@
-# Creating PKI & Enabling Cert Authentication
+# Creating PKI & Enabling Cert Auth
 
 - [Youtube Tutorial Pt. 3](https://youtu.be/_Nqx0guy5RY)
 
