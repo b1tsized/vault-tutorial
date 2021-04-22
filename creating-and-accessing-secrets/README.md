@@ -2,7 +2,7 @@
 
 - [Youtube Tutorial Pt. 2](https://www.youtube.com/watch?v=LEpk376fc-U)
 
-## Enabling your secret store using CLI
+## Enabling Your Secret Store Using CLI
 
 1. Log onto your vault server
 
@@ -50,7 +50,7 @@
 
 	`vault secrets disable kv/`
 
-## Enabling secrets via the UI
+## Enabling Secrets Via The UI
 
 1. Login to your vault server 
 
@@ -86,7 +86,7 @@
 
 	_In this tutorial I'm going to use path secret with whatisit and thisisav1secret for my kv pair_
 
-## Accessing secrets from a remote machine
+## Accessing Secrets From A Remote Machine
 
 1. Open a new terminal on your local machine
 

@@ -65,7 +65,7 @@
   
         `sudo systemctl enable consul`
 
-## Creating a cert for the server
+## Creating A Cert For The Server
 
   1. Installing Certbot
   
