@@ -74,13 +74,17 @@
     4. Create a new user using the following method
 
         `vault write auth/userpass/users/{{username}} \`
+        
         `password={{password}} \`
+        
         `policies=admins`
 
     5. Login to vault using the username and password we just created
 
         `vault login -method=userpass \`
+        
         `username={{username}} \`
+        
         `password={{password}}`
 
     6. Log back into the admin account
