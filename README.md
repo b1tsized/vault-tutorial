@@ -46,8 +46,12 @@ Feel free to check out the following sections. They'll be updated as I add more 
     - [Vault Cert Policy Template](creating-pki-and-enabling-cert-auth/template/vault-cert.hcl)
 
 4. [Alternate Auth Methods And SSH Secrets](alternate-auth-methods-and-ssh-secrets)
-    - _*Work In Progress*_
+    Here we'll go over other auth methods and introduce you to ssh using Vault.
 
     - [Enabling Github As An Auth Method](https://github.com/b1tsized/vault-tutorial/tree/main/alternate-auth-methods-and-ssh-secrets#enabling-github-as-an-auth-method)
     - [Enabling Username and Password Auth Method](https://github.com/b1tsized/vault-tutorial/tree/main/alternate-auth-methods-and-ssh-secrets#enabling-username--password-for-auth-method)
     - [Adding SSH As A Secret](https://github.com/b1tsized/vault-tutorial/tree/main/alternate-auth-methods-and-ssh-secrets#adding-ssh-as-a-secret)
+
+    - [Sys File Templates](alternate-auth-methods-and-ssh-secrets/template/)
+        + [SSH Helper Service Config](alternate-auth-methods-and-ssh-secrets/template/config.hcl)
+        + [OTP Policy](alternate-auth-methods-and-ssh-secrets/template/otp-policy.hcl)
