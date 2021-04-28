@@ -151,7 +151,7 @@
 
     `# Standard Un*x authentication.`
 
-    `\# @include common-auth`
+    `# @include common-auth`
 
     `auth requisite pam_exec.so quiet expose_authtok log=/var/log/vault-ssh.log /usr/local/bin/vault-ssh-helper -config=/etc/vault-ssh-helper.d/config.hcl`
 
