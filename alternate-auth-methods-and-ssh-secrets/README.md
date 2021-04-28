@@ -95,4 +95,90 @@
 
 ## Adding SSH As A Secret
 
-- ### Coming soon
+1. Enable SSH as a Secret
+
+    `vault secrets enable ssh`
+
+2. Enable the role for SSH using OTP
+
+    `vault write ssh/roles/otp_role key_type=otp \`
+    `default_user=ubuntu \`
+    `cidr_list=0.0.0.0/0`
+
+3. Create a otp-policy.hcl file using the template provided
+
+    `sudo vim otp-policy.hcl`
+
+4. Write the policy into Vault
+
+    `vault policy write otp-policy ./otp-policy.hcl`
+
+5. Create a user to be able to login using the otp policy
+
+    `vault write auth/userpass/users/{{username}} password="{{password}}" policies="otp-policy"`
+
+6. SSH into your server you'd like to add
+
+7. Download the Vault SSH Helper
+
+    `wget https://releases.hashicorp.com/vault-ssh-helper/0.2.1/vault-ssh-helper_0.2.1_linux_amd64.zip`
+
+8. Unzip the helper
+
+    `sudo unzip -q vault-ssh-helper_0.2.1_linux_amd64.zip -d /usr/local/bin`
+
+9. Change permissions of the helper
+
+    `sudo chmod 0755 /usr/local/bin/vault-ssh-helper`
+
+10. Change ownership of the helper
+
+    `sudo chown root:root /usr/local/bin/vault-ssh-helper`
+
+11. Make a dir for the helper service
+
+    `sudo mkdir /etc/vault-ssh-helper.d/`
+
+12. Make a new config file inside of that folder using the template supplied
+
+    `sudo vim /etc/vault-ssh-helper.d/config.hcl`
+
+13. Open the PAM Config to edit it
+
+    `sudo vim /etc/pam.d/sshd`
+
+14. Edit the standard Unix Authentication section to look like the following
+
+    ># Standard Un*x authentication.
+    # @include common-auth
+    auth requisite pam_exec.so quiet expose_authtok log=/var/log/vault-ssh.log /usr/
+    local/bin/vault-ssh-helper -config=/etc/vault-ssh-helper.d/config.hcl
+    auth optional pam_unix.so not_set_pass use_first_pass nodelay
+
+15. Save the file
+
+16. Open your sshd_config
+
+    `sudo vim /etc/ssh/sshd_config`
+
+17. Restart the sshd service
+
+    `sudo systemctl restart sshd`
+
+18. On the Vault server login using that username and password previously set
+
+    `vault login -method=userpass username={{username}} password={{password}}`
+
+19. We're going to now get our token for that server
+
+    `vault write ssh/creds/otp_role ip={{ip-address}}`
+
+20. Copy the key displayed in the output
+
+21. From the Vault server try and ssh to the server
+
+    `ssh ubuntu@{{ip-address}}`
+
+22. When it asks for password enter the key given to you in the previous step
+
+23. You've now successfully used Vault to login to a server
