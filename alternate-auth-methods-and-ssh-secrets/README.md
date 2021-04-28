@@ -1,7 +1,5 @@
 # Alternate Auth Methods And SSH Secrets
 
-### _Work in progress_
-
 ## Enabling GitHub As An Auth Method
 
 1. Login to vault server
