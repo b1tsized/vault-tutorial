@@ -149,7 +149,7 @@
 
 14. Edit the standard Unix Authentication section to look like the following
 
-    `\# Standard Un*x authentication.`
+    `# Standard Un*x authentication.`
 
     `\# @include common-auth`
 
