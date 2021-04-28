@@ -149,11 +149,10 @@
 
 14. Edit the standard Unix Authentication section to look like the following
 
-    ># Standard Un*x authentication.
-    # @include common-auth
-    auth requisite pam_exec.so quiet expose_authtok log=/var/log/vault-ssh.log /usr/
-    local/bin/vault-ssh-helper -config=/etc/vault-ssh-helper.d/config.hcl
-    auth optional pam_unix.so not_set_pass use_first_pass nodelay
+    `\# Standard Un*x authentication.`
+    `\# @include common-auth`
+    `auth requisite pam_exec.so quiet expose_authtok log=/var/log/vault-ssh.log /usr/local/bin/vault-ssh-helper -config=/etc/vault-ssh-helper.d/config.hcl`
+    `auth optional pam_unix.so not_set_pass use_first_pass nodelay`
 
 15. Save the file
 
