@@ -20,7 +20,7 @@
 
     `vault policy write github-eng github-eng.hcl`
 
-6. Map your teams to a policy 
+6. Map your teams to a policy
 
     `vault write auth/github/map/teams/{{team-name}} value={{policy}}`
 
@@ -53,7 +53,6 @@
     `vault token revoke -mode path auth/github`
 
     `vault auth disable github`
-
 
 ## Enabling Username & Password For Auth Method
 

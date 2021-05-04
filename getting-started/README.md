@@ -31,7 +31,7 @@
   
   5. Create Systemd Service for Consul
   
-      `sudo nano /etc/systemd/system/consul.service`
+      `sudo vim /etc/systemd/system/consul.service`
   
   6. Copy in Contents of [consul.service](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/consul.service)
   
@@ -43,7 +43,7 @@
   
   9. Make UI config file
   
-      `sudo nano /etc/consul.d/ui.json`
+      `sudo vim /etc/consul.d/ui.json`
   
   10. Copy contents of [ui.json](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/ui.json)
   
@@ -51,19 +51,19 @@
   
   12. Reload the daemon
   
-        `sudo systemctl daemon-reload`
+      `sudo systemctl daemon-reload`
   
   13. Start the consul Service
   
-        `sudo systemctl start consul`
+      `sudo systemctl start consul`
   
   14. Check status of the Service
   
-        `sudo systemctl status consul`
+      `sudo systemctl status consul`
   
   15. Enable Consul as a service upon reboot
   
-        `sudo systemctl enable consul`
+      `sudo systemctl enable consul`
 
 ## Creating A Cert For The Server
 
@@ -105,7 +105,7 @@
   
   6. Create the config file for Vault
   
-      `sudo nano /etc/vault/config.hcl`
+      `sudo vim /etc/vault/config.hcl`
   
   7. Copy contents of [config.hcl](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/config.hcl) and replace pathways for certs and add server IP
   
@@ -113,56 +113,56 @@
   
   8. Create the Vault service
   
-      `sudo nano /etc/systemd/system/vault.service`
+      `sudo vim /etc/systemd/system/vault.service`
   
   9. Copy contents of the [vault.service](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/vault.service) file
   
   10. Reload the daemon
   
-        `sudo systemctl daemon-reload`
+      `sudo systemctl daemon-reload`
   
   11. Export the Vault Address value
   
-        `export VAULT_ADDR=*"https://{{subdomain.example.com}}*:8200"`
+      `export VAULT_ADDR="https://{{subdomain.example.com}}:8200"`
   
   12. Set value in bashrc to reload on reboot
   
-        `echo "export VAULT_ADDR=*https://{{subdomain.example.com}}*:8200" >> ~/.bashrc`
+      `echo "export VAULT_ADDR=https://{{subdomain.example.com}}:8200" >> ~/.bashrc`
   
   13. Enable vault autocomplete
   
-        `vault -autocomplete-install`
+      `vault -autocomplete-install`
   
-        `complete -C /usr/bin/vault vault`
+      `complete -C /usr/bin/vault vault`
   
   14. Start Vault
   
-        `sudo systemctl start vault`
+      `sudo systemctl start vault`
   
   15. Verify status of Vault
   
-        `sudo systemctl status vault`
+      `sudo systemctl status vault`
   
   16. Enable Vault upon restart
   
-        `sudo systemctl enable vault`
+      `sudo systemctl enable vault`
   
   17. Initialize the Vault
   
-        `vault operator init`
+      `vault operator init`
   
   18. Save the unseal keys and token. **These are only generated once and should be saved in a secure location.**
   
   19. Unlock the vault by entering in 3 keys you'll need to use the following command 3 times
   
-        `vault operator unseal`
+      `vault operator unseal`
   
   20. Check to see the vaults sealed status sealed = false means that the vault is unsealed
   
-        `vault status`
+      `vault status`
   
   21. Login via auth Token
   
-        `vault login`
+      `vault login`
   
   22. You've successfully logged in for the first time. Join me in other tutorials for more information on Vault.
