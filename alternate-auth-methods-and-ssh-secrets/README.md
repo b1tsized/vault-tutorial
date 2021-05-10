@@ -98,8 +98,12 @@
 
 2. Enable the role for SSH using OTP
 
+    > Don't use root or the admin account make a test account. You'll see why in the video.
+
     `vault write ssh/roles/otp_role key_type=otp \`
-    `default_user=ubuntu \`
+
+    `default_user={{username}} \`
+
     `cidr_list=0.0.0.0/0`
 
 3. Create a otp-policy.hcl file using the template provided
@@ -160,24 +164,33 @@
 
     `sudo vim /etc/ssh/sshd_config`
 
-17. Restart the sshd service
+17. Edit the following sections
+
+    `ChallengeResponseAuthentication yes`
+
+    `UsePAM yes`
+
+    `PasswordAuthentication no`
+
+
+18. Restart the sshd service
 
     `sudo systemctl restart sshd`
 
-18. On the Vault server login using that username and password previously set
+19. On the Vault server login using that username and password previously set
 
     `vault login -method=userpass username={{username}} password={{password}}`
 
-19. We're going to now get our token for that server
+20. We're going to now get our token for that server
 
     `vault write ssh/creds/otp_role ip={{ip-address}}`
 
-20. Copy the key displayed in the output
+21. Copy the key displayed in the output
 
-21. From the Vault server try and ssh to the server
+22. From the Vault server try and ssh to the server
 
     `ssh ubuntu@{{ip-address}}`
 
-22. When it asks for password enter the key given to you in the previous step
+23. When it asks for password enter the key given to you in the previous step
 
-23. You've now successfully used Vault to login to a server
+24. You've now successfully used Vault to login to a server
