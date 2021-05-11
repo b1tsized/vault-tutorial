@@ -104,7 +104,7 @@
 
 5. Let's create new data with [payload.json](template/payload.json)
 
-	`sudo nano payload.json`
+	`sudo vim payload.json`
 
 6. Update the secret using that payload
 

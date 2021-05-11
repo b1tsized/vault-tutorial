@@ -140,7 +140,7 @@
 
 2. Create an [hcl file](template/vault-cert.hcl) to use for your policy
 
-	`sudo nano vault-cert.hcl`
+	`sudo vim vault-cert.hcl`
 
 3. Next write the policy for the vault cert
 

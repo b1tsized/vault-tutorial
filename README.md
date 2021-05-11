@@ -16,7 +16,7 @@ Feel free to check out the following sections. They'll be updated as I add more 
     - [Creating A Cert For The Server](https://github.com/b1tsized/vault-tutorial/tree/main/getting-started#creating-a-cert-for-the-server)
     - [Install Hashicorp Vault](https://github.com/b1tsized/vault-tutorial/tree/main/getting-started#install-hashicorp-vault)
 
-    - [Youtube Tutorial Pt. 1](https://www.youtube.com/watch?v=b_2lo30g0RU)
+    - [Youtube Tutorial Pt. 1](https://youtu.be/b_2lo30g0RU)
     - [Sys File Templates](getting-started/sys_file_templates)
         + [Consul Service File](getting-started/sys_file_templates/consul.service)
         + [Consul UI JSON](getting-started/sys_file_templates/ui.json)
@@ -31,7 +31,7 @@ Feel free to check out the following sections. They'll be updated as I add more 
     - [Enabling Secrets Using The UI](https://github.com/b1tsized/vault-tutorial/tree/main/creating-and-accessing-secrets#enabling-secrets-via-the-ui)
     - [Accessing Secrets From a Remote Machine](https://github.com/b1tsized/vault-tutorial/tree/main/creating-and-accessing-secrets#accessing-secrets-from-a-remote-machine)
     
-    - [Youtube Tutorial Pt. 2](https://www.youtube.com/watch?v=LEpk376fc-U)
+    - [Youtube Tutorial Pt. 2](https://youtu.be/LEpk376fc-U)
     - [Payload Template](creating-and-accessing-secrets/template/payload.json)
 
 3. [Creating PKI & Enabling Cert Auth](creating-pki-and-enabling-cert-auth)
@@ -46,12 +46,15 @@ Feel free to check out the following sections. They'll be updated as I add more 
     - [Vault Cert Policy Template](creating-pki-and-enabling-cert-auth/template/vault-cert.hcl)
 
 4. [Alternate Auth Methods And SSH Secrets](alternate-auth-methods-and-ssh-secrets)
+    
     Here we'll go over other auth methods and introduce you to ssh using Vault.
 
     - [Enabling Github As An Auth Method](https://github.com/b1tsized/vault-tutorial/tree/main/alternate-auth-methods-and-ssh-secrets#enabling-github-as-an-auth-method)
     - [Enabling Username and Password Auth Method](https://github.com/b1tsized/vault-tutorial/tree/main/alternate-auth-methods-and-ssh-secrets#enabling-username--password-for-auth-method)
     - [Adding SSH As A Secret](https://github.com/b1tsized/vault-tutorial/tree/main/alternate-auth-methods-and-ssh-secrets#adding-ssh-as-a-secret)
 
+    - [YouTube Tutorial Pt. 4](https://youtu.be/R3BzNcJk8YQ)
     - [Sys File Templates](alternate-auth-methods-and-ssh-secrets/template/)
         + [SSH Helper Service Config](alternate-auth-methods-and-ssh-secrets/template/config.hcl)
         + [OTP Policy](alternate-auth-methods-and-ssh-secrets/template/otp-policy.hcl)
+        + [Config File](alternate-auth-methods-and-ssh-secrets/template/config.hcl)
