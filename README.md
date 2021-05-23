@@ -58,3 +58,14 @@ Feel free to check out the following sections. They'll be updated as I add more 
         + [SSH Helper Service Config](04-alternate-auth-methods-and-ssh-secrets/template/config.hcl)
         + [OTP Policy](04-alternate-auth-methods-and-ssh-secrets/template/otp-policy.hcl)
         + [Config File](04-alternate-auth-methods-and-ssh-secrets/template/config.hcl)
+
+5. [AWS/GCP Secrets And OKTA SSO](05-aws-gcp-secrets-and-okta-sso)
+
+    We'll be adding in AWS and GCP to be able to generate access credentials for users through Vault rather than through the respective platforms. We'll also set up Vault to us OKTA SSO for authentication.
+
+    - [Enabling AWS IAM Role As A Secret](05-aws-gcp-secrets-and-okta-sso#enabling-aws-iam-role-as-a-secret)
+    - [Enabling GCP As A Secret](05-aws-gcp-secrets-and-okta-sso#enabling-gcp-as-a-secret)
+    - [Using Okta SSO With Vault](05-aws-gcp-secrets-and-okta-sso#using-okta-sso-with-vault)
+
+    - [Sys File Templates](05-aws-gcp-secrets-and-okta-sso/template)
+        + [AWS IAM Policy](05-aws-gcp-secrets-and-okta-sso/template/aws-iam.json)
