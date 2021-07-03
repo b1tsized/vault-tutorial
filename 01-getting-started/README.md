@@ -33,7 +33,7 @@
   
       `sudo vim /etc/systemd/system/consul.service`
   
-  6. Copy in Contents of [consul.service](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/consul.service)
+  6. Copy in Contents of [consul.service](sys_file_templates/consul.service)
   
   7. Save and exit file
   
@@ -45,7 +45,7 @@
   
       `sudo vim /etc/consul.d/ui.json`
   
-  10. Copy contents of [ui.json](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/ui.json)
+  10. Copy contents of [ui.json](sys_file_templates/ui.json)
   
   11. Save and exit file
   
@@ -107,7 +107,7 @@
   
       `sudo vim /etc/vault/config.hcl`
   
-  7. Copy contents of [config.hcl](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/config.hcl) and replace pathways for certs and add server IP
+  7. Copy contents of [config.hcl](sys_file_templates/config.hcl) and replace pathways for certs and add server IP
   
       *Note: This config uses port 8200 for all communication with vault to change it change the port specified in the config*
   
@@ -115,7 +115,7 @@
   
       `sudo vim /etc/systemd/system/vault.service`
   
-  9. Copy contents of the [vault.service](https://github.com/b1tsized/vault-tutorial/blob/main/getting-started/sys_file_templates/vault.service) file
+  9. Copy contents of the [vault.service](sys_file_templates/vault.service) file
   
   10. Reload the daemon
   
